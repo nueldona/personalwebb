@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.title {
+  color: #2079c7;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+  margin: 0rem 0rem 3rem 3rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d1946;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 2px 1px#96a1cc5b;
+  transition: background-color .36s ease-in;
+  margin-bottom: 3rem;
+}
+
+.sticky {
+  box-shadow: 0 0 2px 2px#0d19465b;
+}
+
+.sticky nav .nav-item a{
+  color: #ffffff;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  position: relative;
+}
+
+nav .nav-item {
+  display: inline-block;
+  list-style: none;
+  margin: 0rem 0.5rem;
+}
+
+nav .nav-item a {
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+nav .nav-item a:hover{
+  color: #2079c7;
+  transition: color .16s ease-in;
+}
+
+.nav-item a.active {
+  color:#2079c7 !important;
+  transition: color .16s ease-in;
+}
+
+
+/* PROFILE */
+.profile {
+  width: 100%;
+  height: 100%;
+  background-color: #0d1946;
+}
+
+.picture-border {
+  width: 100%;
+  object-fit: contain;
+}
+
+.profile .picture {
+  width: 350px;
+  height: 490px;
+}
+
+.profile-info {
+  text-align: center;
+  padding: 2.5rem 0.8rem
+}
+
+.profile-info h1 {
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.profile-info h3 {
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.profile-info p {
+  color: #ffffff;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0rem;
+  transition: all 0.5s ease-in-out;
+  place-items: center;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section .images {
+  width: 100px;
+  height: 130px;
+  border: 2px solid #f1f1f1;
+  border-radius: 50%;
+}
+
+.image-section div {
+  width: 17px;
+  height: 1px;
+  margin: 0px 7px;
+  background: #000000;
+}
+
+.info-section {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 2.5rem 3rem;
+}
+
+.info-section .baseline {
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 7px;
+  border-bottom: 2px solid #a7a7a7;
+}
+
+
+/* EXPERIENCE SECTION */
+.experience-section {
+  padding-top: 1.7rem;
+}
+
+.experience {
+  margin: 0rem 3.5rem 5.5rem 3.5rem;
+}
+
+.experience .experience-title {
+  margin-bottom: 1.3rem;
+}
+
+.experience .experience-title h4 {
+  margin-right: 0.3rem;
+}
+
+/* WORK */
+.work {
+  margin: 1rem 0rem 6rem 0rem;
+}
+.work-section {
+  width: 100%;
+  height: 100%;
+  padding: 1.7rem 3rem 0rem 3rem;
+}
+
+.work-section .card {
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.work-section .card .card-header {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .card-header .preview-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.card .card-header .preview-links a{
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #000000;
+  vertical-align: middle;
+
+}
+
+.card .card-header .preview-links a:hover, .card .card-header .preview-links a:active {
+  color: #2079c7;
+}
+
+.fa-code {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.fa-github, .fa-eye{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.card .card-body {
+  margin: 1.5rem 0rem;
+}
+
+.card .card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.card .card-footer .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #1b1f231a;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.card .card-body p {
+  margin-top: 1rem
+}
+
+.btn-link {
+  padding: 0.8rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  border: 1px solid #afafaf;
+  border-radius: 10px;
+  margin-left: 2.5rem;
+  transition: background-color .36s ease-in;
+}
+
+.btn-link:hover {
+  background-color: #ffffff;
+  color: #2079c7;
+}
+
+.contact {
+  width: 100%;
+  background: #0d1946;
+  height: 100%;
+  padding: 6rem 0rem;
+}
+
+.contact h2, .contact p {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.contact-list ul{
+  list-style: none;
+}
+
+.contact-list ul li {
+  display: inline-block;
+  margin: 0rem 0.7rem;
+}
+
+.contact-list ul li a {
+  color: #ffffff;
+}
+
+.contact-list ul li a:hover {
+  color: #2079c7;
+}
+
+@media screen and (max-width: 400px) {
+
+  .image-section .images {
+    width: 220px;
+    height: 250px;
+    border: 2px solid #afafaf;
+    border-radius: 50%;
+  }
+
+  .image-section .images:nth-child(3), .image-section .images:nth-child(5) {
+    display: none;
+  }
+
+  .image-section div {
+    display: none;
+  }
+
+  .info-section {
+    padding: 2.5rem 2rem;
+  }
+
+  .title {
+    margin: 0rem 0rem 3rem 1.5rem;
+  }
+
+  .experience {
+    margin: 0rem 1.6rem 5.5rem 2.4rem;
+  }
+
+  .work-section {
+    width: 100%;
+    height: 100%;
+    padding: 1.7rem 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    padding: 1rem 0rem;
+  }
+
+  nav .nav-item {
+    margin: 0rem 0.3rem;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  .picture-border {
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 750px) {
+  nav .nav-item {
+    margin: 0rem 0.5rem;
+  }
+  
+  nav .nav-item a {
+    font-size: 1.1rem;
+  }
+
+  .profile-info {
+    padding: 2.5rem 2rem
+  }
+
+  .experience .experience-title {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  nav .nav-item {
+    margin: 0rem 0.9rem;
+  }
+  
+  nav .nav-item a {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .experience .experience-title {
+    display: flex;
+  }
+  
+  .picture-border {
+    display: grid;
+    place-items: center;
+  }
+
+  .profile-info {
+    width: 50%;
+  }
+
+  .inner-section {
+    padding: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image-section .images {
+    width: 120px;
+    height: 140px;
+  }
+
+  .info-section {
+    padding: 2rem 0rem 2rem 1.5rem;
+  }
+
+  .experience .experience-title {
+    display: block;
+  }
+
+  .experience {
+    margin: 0rem 0rem 5.5rem 3.5rem;
+  }
+
+
+}
+
+@media screen and (min-width: 950px) {
+  .profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 0rem;
+  }
+
+  .picture-border {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .profile .picture {
+    width: 460px;
+    height: 620px;
+  }
+  
+  .profile-info {
+    text-align: left;
+    width: 100%;
+    padding: 9rem 2rem 0rem 0rem;
+  }
+
+  .profile-info h1 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  
+  .profile-info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .profile-info p {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  
+  
+  
+
+  .inner-section {
+    padding: 2rem 2rem;
+  }
+
+  .image-section .images {
+    width: 150px;
+    height: 170px;
+  }
+
+  .info-section {
+    padding: 2rem 2rem;
+  }
+
+  .work-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .work-section .card {
+    height: auto;
+  }
+
+  .work-section .card .card-header {
+    height: auto;
+  }
+}
